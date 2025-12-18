@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robinette Government Solutions LLC | Government Supply & Procurement</title>
+  <meta name="description" content="Robinette Government Solutions LLC provides government supply and procurement support including PPE, office supplies, cleaning products, safety equipment, and general commodities." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Robinette Government Solutions LLC" />
+  <meta property="og:description" content="Government supply and procurement: PPE, office supplies, cleaning products, safety equipment, and general commodities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robinettegovsolutions.com/" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a30;
+      --text:#eaf0ff;
+      --muted:#b8c4e6;
+      --line:rgba(255,255,255,.12);
+      --accent:#66a3ff;
+      --accent2:#7cf2c7;
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1100px 600px at 15% 10%, rgba(102,163,255,.18), transparent 55%),
+        radial-gradient(900px 500px at 85% 20%, rgba(124,242,199,.16), transparent 55%),
+        linear-gradient(180deg, #070b14 0%, var(--bg) 35%, #070b14 100%);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(7,11,20,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      text-decoration:none;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(102,163,255,.95), rgba(124,242,199,.9));
+      box-shadow: 0 10px 25px rgba(102,163,255,.18);
+    }
+    .brand strong{display:block; font-size:14px; letter-spacing:.2px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    nav a{
+      text-decoration:none; color:var(--muted);
+      margin-left:14px; font-size:13px;
+    }
+    nav a:hover{color:var(--text)}
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(102,163,255,.35);
+      background: rgba(102,163,255,.12);
+      text-decoration:none;
+      font-size:13px;
+      color:var(--text);
+    }
+    .cta:hover{background: rgba(102,163,255,.18)}
+    .hero{
+      padding:56px 0 22px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+    }
+    @media (max-width: 880px){
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+    .card{
+      background: rgba(15,26,48,.75);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-card{padding:26px}
+    .kicker{
+      display:inline-flex; gap:8px; align-items:center;
+      color:var(--muted);
+      font-size:12px;
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.04);
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;
+      background: var(--accent2);
+      box-shadow: 0 0 0 3px rgba(124,242,199,.12);
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size:34px;
+      line-height:1.1;
+      letter-spacing:-.5px;
+    }
+    p{margin:0 0 14px; color:var(--muted)}
+    .hero-actions{
+      display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      text-decoration:none;
+      color:var(--text);
+      font-size:13px;
+    }
+    .btn.primary{
+      border-color: rgba(102,163,255,.45);
+      background: linear-gradient(135deg, rgba(102,163,255,.25), rgba(124,242,199,.12));
+    }
+    .btn:hover{background: rgba(255,255,255,.07)}
+    .aside{padding:18px}
+    .aside h3{margin:0 0 10px; font-size:14px}
+    .list{margin:0; padding:0; list-style:none}
+    .list li{
+      padding:10px 0;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .list li:first-child{border-top:0}
+    section{padding:18px 0}
+    .section-title{
+      display:flex; align-items:end; justify-content:space-between; gap:12px;
+      margin:10px 0 10px;
+    }
+    .section-title h2{margin:0; font-size:18px}
+    .section-title span{color:var(--muted); font-size:12px}
+    .cols{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+    }
+    @media (max-width: 880px){ .cols{grid-template-columns:1fr} }
+    .mini{padding:16px}
+    .mini h4{margin:0 0 8px; font-size:14px}
+    .mini p{margin:0; font-size:13px}
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{
+      font-size:12px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+    }
+    .contact{
+      padding:18px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 880px){ .contact{grid-template-columns:1fr} }
+    .contact a{color:var(--text)}
+    footer{
+      padding:26px 0 50px;
+      color:var(--muted);
+      font-size:12px;
+      border-top:1px solid var(--line);
+      margin-top:22px;
+    }
+    .fine{opacity:.9}
+    .muted{color:var(--muted)}
+    .right{justify-self:end}
+    @media (max-width: 880px){ .right{justify-self:start} }
+    code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      color: #dbe6ff;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Robinette Government Solutions">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <strong>Robinette Government Solutions LLC</strong>
+          <span>Government Supply & Procurement</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#industries">Focus Areas</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="cta" href="mailto:contact@robinettegovsolutions.com">Email: contact@robinettegovsolutions.com</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="grid">
+      <div class="card hero-card">
+        <div class="kicker"><span class="dot" aria-hidden="true"></span> Small business | Fast quotes | Reliable sourcing</div>
+        <h1>Simple, responsive procurement for government buyers.</h1>
+        <p>
+          Robinette Government Solutions LLC supports government purchasing with dependable sourcing and delivery of
+          <strong>PPE</strong>, <strong>office supplies</strong>, <strong>cleaning products</strong>, <strong>industrial safety</strong>,
+          and other general commodities.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:contact@robinettegovsolutions.com?subject=Request%20a%20Quote%20-%20Robinette%20Government%20Solutions">
+            Request a Quote
+          </a>
+          <a class="btn" href="#capabilities">View Capabilities</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+
+        <p class="muted" style="margin-top:12px">
+          <strong>Tip for COs/Buyers:</strong> Email a list of items (NSN/part #/qty/ship-to) and we’ll respond with pricing and lead time.
+        </p>
+      </div>
+
+      <aside class="card aside" aria-label="Quick facts">
+        <h3>Quick Facts</h3>
+        <ul class="list">
+          <li><strong>Core Offering:</strong> Supply sales for government (commercial items & general commodities)</li>
+          <li><strong>Service Model:</strong> Quote → Source → Deliver (firm fixed-price when requested)</li>
+          <li><strong>Coverage:</strong> Federal, State, and Local opportunities</li>
+          <li><strong>Website:</strong> <span class="muted">robinettegovsolutions.com</span></li>
+          <li><strong>Email:</strong> <a href="mailto:contact@robinettegovsolutions.com">contact@robinettegovsolutions.com</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section id="capabilities">
+      <div class="section-title">
+        <h2>Capabilities</h2>
+        <span>Common purchase categories we support</span>
+      </div>
+
+      <div class="cols">
+        <div class="card mini">
+          <h4>PPE & Safety</h4>
+          <p>Gloves, eyewear, masks, disposable apparel, hearing protection, first-aid, and facility safety essentials.</p>
+          <div class="pillrow">
+            <span class="pill">Nitrile / Chem gloves</span>
+            <span class="pill">Safety eyewear</span>
+            <span class="pill">Workplace PPE</span>
+          </div>
+        </div>
+
+        <div class="card mini">
+          <h4>Cleaning & Jan/San</h4>
+          <p>Cleaning chemicals, paper products, dispensers, liners, and consumables for facilities and operations.</p>
+          <div class="pillrow">
+            <span class="pill">Paper products</span>
+            <span class="pill">Sanitizers</span>
+            <span class="pill">Facility supplies</span>
+          </div>
+        </div>
+
+        <div class="card mini">
+          <h4>Office & General Supplies</h4>
+          <p>Office products, breakroom basics, packaging, and general-purpose consumables for day-to-day needs.</p>
+          <div class="pillrow">
+            <span class="pill">Paper</span>
+            <span class="pill">Writing instruments</span>
+            <span class="pill">Shipping supplies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mini" style="margin-top:14px">
+        <h4>Identifiers (Add as you receive them)</h4>
+        <p class="muted" style="margin-bottom:8px">
+          Replace the placeholders below once issued (UEI/CAGE, NAICS, etc.). This makes your site “buyer-ready.”
+        </p>
+        <div class="pillrow">
+          <span class="pill"><strong>UEI:</strong> <code>Pending</code></span>
+          <span class="pill"><strong>CAGE:</strong> <code>Pending</code></span>
+          <span class="pill"><strong>Primary NAICS:</strong> <code>Pending</code></span>
+          <span class="pill"><strong>PSC:</strong> <code>Varies by commodity</code></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries">
+      <div class="section-title">
+        <h2>Focus Areas</h2>
+        <span>Where we fit best</span>
+      </div>
+
+      <div class="cols">
+        <div class="card mini">
+          <h4>Public Safety & Corrections</h4>
+          <p>Operational consumables and safety supplies that support daily readiness and facility needs.</p>
+        </div>
+        <div class="card mini">
+          <h4>Healthcare & Clinics</h4>
+          <p>Gloves and other routine supplies to support non-emergency purchasing and replenishment cycles.</p>
+        </div>
+        <div class="card mini">
+          <h4>General Administration</h4>
+          <p>Office and facility consumables for agencies, schools, and municipal operations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <span>Fast response for quotes & sourcing</span>
+      </div>
+
+      <div class="card contact">
+        <div>
+          <h3 style="margin:0 0 8px; font-size:14px;">Email</h3>
+          <p class="muted" style="margin-bottom:10px;">
+            Send item list (NSN/part #/qty/ship-to) and preferred delivery date.
+          </p>
+          <p style="margin:0;">
+            <a class="btn primary" href="mailto:contact@robinettegovsolutions.com?subject=Request%20a%20Quote%20-%20Robinette%20Government%20Solutions">
+              contact@robinettegovsolutions.com
+            </a>
+          </p>
+        </div>
+
+        <div class="right">
+          <h3 style="margin:0 0 8px; font-size:14px;">Address / Service Area</h3>
+          <p class="muted" style="margin:0 0 10px;">
+            Myrtle Beach, South Carolina (serving Federal, State, and Local buyers)
+          </p>
+          <p class="fine" style="margin:0;">
+            <strong>Business hours:</strong> Mon–Fri<br />
+            <span class="muted">After-hours emails welcomed; we respond ASAP.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;">
+          <div>
+            <strong>Robinette Government Solutions LLC</strong><br />
+            <span class="muted">Government Supply & Procurement</span>
+          </div>
+          <div>
+            <a class="muted" href="mailto:contact@robinettegovsolutions.com">contact@robinettegovsolutions.com</a>
+          </div>
+        </div>
+        <p class="fine" style="margin-top:10px;">
+          © <span id="y"></span> Robinette Government Solutions LLC. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+</main>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
